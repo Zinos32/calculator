@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="toggle" id="toggle"><i class="fa-solid fa-bars"></i></button>
+      <h2>Standard</h2>
+
+      <button class="history" id="history">
+        <i class="fas fa-history"></i>
+      </button>
+
+      <input type="text" id="result"  
+      >
+      <div class="row">
+        <button class="number ramz" id="percent" onclick="perc('%')">%</button>
+        <button class="number ramz" value="C" onclick="clr()">C</button>
+        <button class="number ramz" id="back" value="<" onclick="runBack()"><i class="fas fa-backspace"></i></button>
+        <button class="number ramz" value="÷"  onclick="dis('/')"><i class="fas fa-divide"></i></button>
+      
+    </div>
+    <div class="row">
+        <button class="number" value="7"  onclick="dis('7')">7</button>
+        <button class="number" value="8"  onclick="dis('8')">8</button>
+        <button class="number" value="9"  onclick="dis('9')">9</button>
+        <button class="number ramz" value="*" onclick="dis('*')"><i class="fas fa-times"></i></button>
+    
+    </div>
+    <div class="row">
+        <button class="number" value="4" onclick="dis('4')">4</button>
+        <button class="number" value="5" onclick="dis('5')">5</button>
+        <button class="number" value="6" onclick="dis('6')">6</button>
+        <button class="number ramz" value="+"  onclick="dis('+')"><i class="fas fa-plus"></i></button>
+    </div>
+    <div class="row">
+        <button class="number" value="1"  onclick="dis('1')">1</button>
+        <button class="number" value="2"  onclick="dis('2')">2</button>
+        <button class="number" value="3"  onclick="dis('3')">3</button>
+        <button class="number ramz" value="-"  onclick="dis('-')"><i class="fas fa-minus"></i></button>
+        
+      </div>
+      <div class="row">
+        <button class="number" id="coma">,</button>
+        <button class="number" value="0"  onclick="dis('0')">0</button>
+        <button class="number" value="." onclick="dis('.')">.</button>
+        <button class="number ramz equal" value="=" onclick="solve()"><i class="fas fa-equals"></i></button>
+        
+      </div>
+
+      <div class="toggle-menu " id="menu">
+        <button class="close-btn" id="close"><i class="fas fa-times"></i></button>
+
+        <h2>Calculator</h2>
+        <ul>
+          <li><i class="fas fa-calculator"></i><a href="#">Standard</a> </li>
+          <li><i class="fas fa-flask"></i><a href="#">Scientific</a> </li>
+          <li><i class="fas fa-chart-bar"></i><a href="#">Graphing</a> </li>
+          <li><i class="fas fa-code"></i><a href="#">Progammer</a> </li>
+          <li><i class="fas fa-calendar-alt"></i><a href="#">Date Calculation</a> </li>
+
+
+        </ul>
+      </div>
+      
+      <div class="science-container">
+        <h2>Scientific</h2>
+        <div class="input">
+          <input type="text" id="result">
+        </div>
+        <div class="row">
+          <button class="number ramz" id="percent" onclick="perc('%')">%</button>
+          <button class="number ramz" value="C" onclick="clr()">C</button>
+          <button class="number ramz" id="back" value="<" onclick="runBack()"><i class="fas fa-backspace"></i></button>
+          <button class="number ramz" value="÷"  onclick="dis('/')"><i class="fas fa-divide"></i></button>
+        
+      </div>
+      <div class="row">
+          <button class="number" value="7"  onclick="dis('7')">sin</button>
+          <button class="number" value="8"  onclick="dis('8')">cos</button>
+          <button class="number" value="9"  onclick="dis('9')">tan</button>
+          <button class="number ramz" value="*" onclick="dis('*')"><i class="fas fa-times"></i></button>
+      
+      </div>
+      <div class="row">
+          <button class="number" value="4" onclick="dis('4')">log</button>
+          <button class="number" value="5" onclick="dis('5')">x</button>
+          <button class="number" value="6" onclick="dis('6')">x2</button>
+          <button class="number ramz" value="+"  onclick="dis('+')"><i class="fas fa-plus"></i></button>
+      </div>
+      <div class="row">
+          <button class="number" value="1"  onclick="dis('1')">√x</button>
+          <button class="number" value="2"  onclick="dis('2')">f(x)</button>
+          <button class="number" value="3"  onclick="dis('3')">log-1</button>
+          <button class="number ramz" value="-"  onclick="dis('-')"><i class="fas fa-minus"></i></button>
+          
+        </div>
+        <div class="row">
+          <button class="number" id="coma">,</button>
+          <button class="number" value="0"  onclick="dis('0')">[</button>
+          <button class="number" value="." onclick="dis('.')">]</button>
+          <button class="number ramz equal" value="=" onclick="solve()"><i class="fas fa-equals"></i></button>
+          
+        </div>
+        
+      </div>
+
+    <script
+      src="https://kit.fontawesome.com/6e7e7a91d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
